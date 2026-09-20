@@ -8,7 +8,7 @@
 * **Carrera:** Ingeniería Informática
 * **Estudiante:** Juan Vidal Berrocal Ccapcha
 * **Plataforma:** Google Colab
-
+   [Ver Colab](https://drive.google.com/file/d/1Kt-5GENCp0KVtY1eQkKsRZzLUuumHkG2/view?usp=sharing)
 ---
 
 ## 1. Problema
