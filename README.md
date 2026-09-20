@@ -1,4 +1,4 @@
-# 🚛 Ruta Óptima de Camiones Mineros
+#  Ruta Óptima de Camiones Mineros
 
 **Challenge 1 — Búsqueda Inteligente y Optimización**
 
@@ -11,7 +11,7 @@
 
 ---
 
-## 1. 🎯 Problema
+## 1. Problema
 
 ### Contexto
 
@@ -32,7 +32,7 @@ Determinar la ruta óptima para un camión minero considerando:
 
 ---
 
-## 2. 🗺️ Representación del Problema
+## 2.  Representación del Problema
 
 La red de transporte se modela mediante un **grafo dirigido y ponderado**, donde los nodos representan intersecciones o zonas de la operación minera y las aristas corresponden a los tramos disponibles.
 
@@ -50,7 +50,7 @@ La red de transporte se modela mediante un **grafo dirigido y ponderado**, donde
 
 ---
 
-## 3. 🔄 Espacio de Estados
+## 3.  Espacio de Estados
 
 El espacio de estados representa las posibles posiciones que ocupa el camión durante su trayecto.
 
@@ -67,7 +67,7 @@ El espacio de estados representa las posibles posiciones que ocupa el camión du
 
 ---
 
-## 4. 🔎 Estrategias de Búsqueda
+## 4. Estrategias de Búsqueda
 
 Se implementaron y evaluaron cuatro estrategias fundamentales para recorrer el espacio de estados:
 
@@ -87,7 +87,7 @@ Se implementaron y evaluaron cuatro estrategias fundamentales para recorrer el e
 
 ---
 
-## 5. 🤖 Incorporación de Datos Históricos
+## 5.  Incorporación de Datos Históricos
 
 Se integraron registros de operaciones pasadas para ajustar dinámicamente los tiempos de recorrido en función de la inclinación y el riesgo de cada tramo.
 
@@ -99,13 +99,13 @@ Tiempo estimado = Tiempo base × (1 + Pendiente / 100) × (1 + Riesgo)
 
 ---
 
-## 6. 💰 Función de Costo
+## 6.  Función de Costo
 
 El costo operativo global combina de forma ponderada tres factores clave:
 
-- ⏱️ **Tiempo de recorrido**
-- ⛽ **Consumo de combustible**
-- ⚠️ **Riesgo operativo**
+-  **Tiempo de recorrido**
+-  **Consumo de combustible**
+-  **Riesgo operativo**
 
 ### Función de costo
 
@@ -114,7 +114,7 @@ Costo = (w_t × Tiempo) + (w_c × Combustible) + (w_r × Riesgo)
 
 ```
 
-## 7. 🧠 Optimización de Pesos mediante Hill Climbing
+## 7.  Optimización de Pesos mediante Hill Climbing
 
 Para encontrar la combinación óptima de ponderaciones ($w_t, w_c, w_r$) que minimice el costo general sin sesgar la búsqueda hacia una sola variable, se aplicó un algoritmo de **Hill Climbing** (búsqueda local).
 
@@ -142,7 +142,7 @@ Con la función de costo calibrada por el algoritmo de Hill Climbing, se ejecut�
 
 ---
 
-## 9. 📊 Resultados y Métricas Comparativas
+## 9.  Resultados y Métricas Comparativas
 
 ### Métricas de la Ruta Óptima Final
 
@@ -164,7 +164,7 @@ Con la función de costo calibrada por el algoritmo de Hill Climbing, se ejecut�
 | **A\* Optimizado** | `Carga` ➔ `Cruce_A` ➔ `Cruce_C` ➔ `Descarga` | **`5.10`** |
 ---
 
-## 10. 🔄 Pipeline del Sistema
+## 10.  Pipeline del Sistema
 
 ```text
 ┌──────────────────────────────────────────────────────────┐
